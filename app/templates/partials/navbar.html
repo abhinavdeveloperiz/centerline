@@ -1,0 +1,104 @@
+{% load static %}
+
+<nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+            <a href="{% url 'home' %}">
+                <img src="{% static 'logo/logo.jpeg' %}"
+                     alt="Centerline Logo"
+                     class="h-14 md:h-16">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+
+                <a href="{% url 'home' %}" class="font-medium hover:text-cyan-500">
+                    Home
+                </a>
+
+                <a href="{% url 'about' %}" class="font-medium hover:text-cyan-500">
+                    About
+                </a>
+
+                <a href="{% url 'services' %}" class="font-medium hover:text-cyan-500">
+                    Services
+                </a>
+
+                <a href="{% url 'products' %}" class="font-medium hover:text-cyan-500">
+                    Products
+                </a>
+
+                <a href="{% url 'blog' %}" class="font-medium hover:text-cyan-500">
+                    Blog
+                </a>
+
+                <a href="{% url 'gallery' %}" class="font-medium hover:text-cyan-500">
+                    Gallery
+                </a>
+
+                <a href="{% url 'contact' %}"
+                   class="bg-[#00337a] text-white px-6 py-3 rounded-full hover:bg-[#39c0ba] transition">
+                    Contact
+                </a>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn" class="md:hidden text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+         class="fixed top-0 left-[-100%] w-72 h-full bg-white shadow-xl transition-all duration-300 z-50">
+
+        <div class="p-5 flex justify-between items-center border-b">
+
+            <img src="{% static 'logo/logo.jpeg' %}"
+                 class="h-12">
+
+            <button id="closeBtn">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+
+        </div>
+
+        <div class="flex flex-col p-6 space-y-5">
+
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="{% url 'products' %}">Products</a>
+            <a href="{% url 'blog' %}">Blog</a>
+            <a href="{% url 'gallery' %}">Gallery</a>
+
+            <a href="{% url 'contact' %}"
+               class="bg-[#00337a] text-white text-center py-3 rounded-lg">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const closeBtn = document.getElementById('closeBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {
+    mobileMenu.style.left = '0';
+});
+
+closeBtn.addEventListener('click', () => {
+    mobileMenu.style.left = '-100%';
+});
+</script>

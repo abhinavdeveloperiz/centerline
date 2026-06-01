@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% load static %}
+
+<!-- Gallery Banner -->
+<section class="relative h-[30vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+    style="background-image:url('https://nividous.com/wp-content/uploads/2021/05/Automation-In-Healthcare-Achieving-Operational-Efficiency-At-Scale-blog-feature-nvd-1.webp');">
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white">Gallery</h1>
+        <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+    </div>
+
+</section>
+
+<!-- Gallery Intro -->
+<section class="py-16 bg-white">
+
+    <div class="max-w-4xl mx-auto text-center px-6">
+
+        <span class="text-[#39c0ba] uppercase font-semibold tracking-wider">
+            Our Projects
+        </span>
+
+        <h2 class="text-4xl font-bold text-[#00337a] mt-4">
+            Healthcare Infrastructure Excellence
+        </h2>
+
+        <p class="text-gray-600 mt-6 leading-relaxed">
+            Explore our completed projects in healthcare HVAC systems,
+            modular healthcare facilities, infection control systems,
+            medical gas installations and hospital electrical solutions.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="pb-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card -->
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px]">
+
+                <img src="https://www.facilitiesnet.com/resources/editorial/2021/12072019123-ESA1901.jpg" alt=""
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent">
+                </div>
+
+                <div class="absolute bottom-0 left-0 p-8">
+                    <h4 class="text-white text-2xl font-bold">
+                        Healthcare HVAC
+                    </h4>
+                    <p class="text-gray-300 mt-2">
+                        Advanced Air Handling Systems
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Card -->
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px]">
+
+                <img src="https://etimg.etb2bimg.com/photo/122497653.cms" alt=""
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent">
+                </div>
+
+                <div class="absolute bottom-0 left-0 p-8">
+                    <h4 class="text-white text-2xl font-bold">
+                        Modular Construction
+                    </h4>
+                    <p class="text-gray-300 mt-2">
+                        Modern Healthcare Facilities
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Card -->
+            <div class="group relative overflow-hidden rounded-3xl shadow-lg h-[400px]">
+
+                <img src="https://retinalscreenings.com/wp-content/uploads/2022/02/AdobeStock_317687329-scaled.jpeg"
+                    alt=""
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent">
+                </div>
+
+                <div class="absolute bottom-0 left-0 p-8">
+                    <h4 class="text-white text-2xl font-bold">
+                        Infection Control
+                    </h4>
+                    <p class="text-gray-300 mt-2">
+                        Safe Healthcare Environment
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Stats Section -->
+<section class="bg-[#00337a] py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h3 class="text-5xl font-bold text-white">100+</h3>
+                <p class="text-[#39c0ba] mt-3">Projects</p>
+            </div>
+
+            <div>
+                <h3 class="text-5xl font-bold text-white">50+</h3>
+                <p class="text-[#39c0ba] mt-3">Installations</p>
+            </div>
+
+            <div>
+                <h3 class="text-5xl font-bold text-white">5+</h3>
+                <p class="text-[#39c0ba] mt-3">Core Services</p>
+            </div>
+
+            <div>
+                <h3 class="text-5xl font-bold text-white">100%</h3>
+                <p class="text-[#39c0ba] mt-3">Client Satisfaction</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-white">
+
+    <div class="max-w-4xl mx-auto text-center px-6">
+
+        <h2 class="text-5xl font-bold text-[#00337a]">
+            Let's Build Better Healthcare Facilities
+        </h2>
+
+        <p class="text-gray-600 mt-6">
+            Contact our team to discuss your healthcare infrastructure project.
+        </p>
+
+        <a href="{% url 'contact' %}"
+            class="inline-block mt-8 bg-[#00337a] hover:bg-[#39c0ba] text-white px-10 py-4 rounded-full transition">
+
+            Get In Touch
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+
+{% endblock %}

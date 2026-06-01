@@ -1,0 +1,142 @@
+<footer class="bg-[#00337a] text-white">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4">
+                    Centerline Technical Services
+                </h3>
+
+                <p class="text-gray-300 leading-relaxed">
+                    Delivering quality products and services with innovation,
+                    reliability and customer satisfaction.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-xl font-semibold mb-5">
+                    Quick Links
+                </h4>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="{% url 'home' %}" class="text-gray-300 hover:text-[#39c0ba] transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'about' %}" class="text-gray-300 hover:text-[#39c0ba] transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'services' %}" class="text-gray-300 hover:text-[#39c0ba] transition">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'products' %}" class="text-gray-300 hover:text-[#39c0ba] transition">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'contact' %}" class="text-gray-300 hover:text-[#39c0ba] transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-xl font-semibold mb-5">
+                    Contact Info
+                </h4>
+
+                <div class="space-y-4">
+
+                    <p class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-phone text-[#39c0ba]"></i>
+                        +91 9876543210
+                    </p>
+
+                    <p class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-envelope text-[#39c0ba]"></i>
+                        info@example.com
+                    </p>
+
+                    <p class="flex items-center gap-3 text-gray-300">
+                        <i class="fas fa-location-dot text-[#39c0ba]"></i>
+                        Kerala, India
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h4 class="text-xl font-semibold mb-5">
+                    Follow Us
+                </h4>
+
+                <div class="flex gap-4">
+
+                    <a href="#"
+                        class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#39c0ba] transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#39c0ba] transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#39c0ba] transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#"
+                        class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#39c0ba] transition duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/20 mt-12 pt-6">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-gray-300 text-sm">
+                    © {% now "Y" %} Centerline Technical Services. All Rights Reserved.
+                </p>
+
+                <div class="flex gap-5 text-sm">
+
+                    <a href="https://www.inspirezesttechnologies.com/" class="text-gray-300 hover:text-[#39c0ba]">
+                        Developed by InspireZest Technologies Pvt Ltd
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

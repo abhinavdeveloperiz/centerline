@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block title %}Blog | Centerline Technical Services{% endblock %}
+
+{% block content %}
+
+<section class="relative h-[30vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+    style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80');">
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white">Blog</h1>
+        <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+    </div>
+
+</section>
+
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-8">
+            <article
+                class="group overflow-hidden rounded-[2rem] shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=80"
+                    class="h-72 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="p-8">
+                    <div class="text-sm uppercase tracking-[0.4em] text-secondary mb-3">Project</div>
+                    <h2 class="text-2xl font-bold text-primary mb-4">Modernizing Hospital HVAC for Safer Care</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Learn how the latest HVAC upgrades reduce infection risk, improve air quality and support
+                        patient outcomes.
+                    </p>
+                    <a href="#" class="inline-block mt-6 text-primary font-medium hover:text-secondary">Read more →</a>
+                </div>
+            </article>
+
+            <article
+                class="group overflow-hidden rounded-[2rem] shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80"
+                    class="h-72 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="p-8">
+                    <div class="text-sm uppercase tracking-[0.4em] text-secondary mb-3">Guides</div>
+                    <h2 class="text-2xl font-bold text-primary mb-4">Top 5 Infection Control Strategies for Clinics</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Practical steps for facility managers to strengthen infection prevention in surgical and
+                        inpatient spaces.
+                    </p>
+                    <a href="#" class="inline-block mt-6 text-primary font-medium hover:text-secondary">Read more →</a>
+                </div>
+            </article>
+
+            <article
+                class="group overflow-hidden rounded-[2rem] shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <img src="https://cdn.media.amplience.net/i/epammarketplace/automation-in-healthcare-header?maxW=1200&qlt=80&fmt=jpg&bg=rgb%28255%2C255%2C255%29&v=195750753486"
+                    class="h-72 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="p-8">
+                    <div class="text-sm uppercase tracking-[0.4em] text-secondary mb-3">News</div>
+                    <h2 class="text-2xl font-bold text-primary mb-4">How Healthcare Design Is Shifting in 2026</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Explore emerging design trends that are shaping the next generation of healthcare facilities.
+                    </p>
+                    <a href="#" class="inline-block mt-6 text-primary font-medium hover:text-secondary">Read more →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-primary">Latest updates for healthcare leaders</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                Sign up for quick updates on product launches, case studies and technical best practices.
+            </p>
+        </div>
+        <div class="max-w-3xl mx-auto bg-white rounded-[2rem] shadow-lg p-10">
+            <form class="grid gap-6 md:grid-cols-[2fr_1fr] items-end">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" placeholder="you@example.com"
+                        class="mt-3 w-full rounded-3xl border border-slate-300 px-5 py-4 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20">
+                </div>
+                <button type="submit"
+                    class="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-white font-semibold hover:bg-secondary transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid gap-8 md:grid-cols-3">
+            <div class="bg-white rounded-[2rem] p-10 shadow-lg">
+                <h3 class="text-xl font-semibold text-primary mb-4">Healthcare Projects</h3>
+                <p class="text-gray-600 leading-relaxed">Expert insights into hospital upgrades, clean room systems and
+                    specialized medical infrastructure.</p>
+            </div>
+            <div class="bg-white rounded-[2rem] p-10 shadow-lg">
+                <h3 class="text-xl font-semibold text-primary mb-4">Safety & Compliance</h3>
+                <p class="text-gray-600 leading-relaxed">Guidance on regulatory requirements, infection control measures
+                    and certification-ready solutions.</p>
+            </div>
+            <div class="bg-white rounded-[2rem] p-10 shadow-lg">
+                <h3 class="text-xl font-semibold text-primary mb-4">Product Innovation</h3>
+                <p class="text-gray-600 leading-relaxed">Updates on technology, energy efficiency, smart monitoring and
+                    next-gen clinical systems.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

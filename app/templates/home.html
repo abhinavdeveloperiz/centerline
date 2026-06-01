@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="relative h-[60vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="https://asclephealth.com/wp-content/uploads/2025/05/1-1-2-1024x746.png"
+            alt="Healthcare Infrastructure" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/65"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+        <!-- Badge -->
+        <div
+            class="inline-flex items-center gap-2 px-5 py-2 mb-8 rounded-full border border-white/20 bg-white/10 backdrop-blur-md text-white text-xs font-medium">
+            <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+            Healthcare Infrastructure Solutions
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-6xl  font-bold text-white leading-tight tracking-tight">
+            Building
+            <span class="text-cyan-400">Smarter Healthcare</span>
+            Infrastructure
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-8 max-w-2xl mx-auto text-sm text-gray-300 leading-relaxed">
+            Delivering modern healthcare environments through innovative
+            engineering, advanced technology, and industry-compliant solutions.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-12 flex flex-col-2 sm:flex-row justify-center gap-4">
+
+            <a href="{% url 'services' %}"
+                class="px-8 py-4 bg-cyan-500 text-white rounded-full font-semibold hover:bg-cyan-400 transition duration-300">
+                Explore Services
+            </a>
+
+            <a href="{% url 'contact' %}"
+                class="px-8 py-4 border border-white/30 text-white rounded-full font-semibold hover:bg-white hover:text-gray-900 transition duration-300">
+                Contact Us
+            </a>
+
+        </div>
+
+        <!-- Bottom Indicator -->
+        <div class="mt-20 flex justify-center">
+            <div class="w-24 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div class="space-y-6">
+                <span class="text-secondary uppercase text-sm tracking-[0.4em] font-semibold">About Centerline</span>
+                <h2 class="text-4xl font-bold text-primary">Delivering healthcare infrastructure that performs from day
+                    one.</h2>
+                <p class="text-gray-600 leading-relaxed text-sm text-justify">
+                    Centerline Technical Services creates medical infrastructure systems with a focus on safety,
+                    efficiency and long-term reliability.
+                    We support healthcare spaces with HVAC, infection control, medical gas, electrical, and modular
+                    solutions.
+                </p>
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-3xl bg-white p-6 shadow-lg">
+                        <h3 class="font-semibold text-primary">20+ Projects</h3>
+                        <p class="text-gray-600 mt-2">Delivering healthcare systems across hospitals, labs, and clinics.
+                        </p>
+                    </div>
+                    <div class="rounded-3xl bg-white p-6 shadow-lg">
+                        <h3 class="font-semibold text-primary">Compliance Ready</h3>
+                        <p class="text-gray-600 mt-2">Built to meet healthcare safety and regulatory standards.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+                <img src="https://harmonyhomemedical.com/cdn/shop/articles/Types-of-Medical-Supplies-729119.jpg?v=1662070183"
+                    alt="Healthcare project" class="h-72 w-full rounded-[2rem] object-cover shadow-xl">
+                <img src="https://image.made-in-china.com/365f3j00qJtWEcuyELoA/Hospital-Cabinet-Furniture-and-Equipment-One-Stop-Medical-Solution-Supplier-Medical-Equipment.webp"
+                    alt="Medical equipment" class="h-72 w-full rounded-[2rem] object-cover shadow-xl">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-14">
+            <span class="text-secondary uppercase text-sm tracking-[0.4em] font-semibold">Core Services</span>
+            <h2 class="text-4xl font-bold text-primary mt-4">Solutions for every healthcare facility</h2>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-[2rem] overflow-hidden shadow-xl group">
+                <img src="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=900&q=80"
+                    alt="Hospital HVAC" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="bg-white p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Healthcare HVAC</h3>
+                    <p class="text-gray-600 leading-relaxed">Clean air, temperature control and infection prevention for
+                        critical spaces.</p>
+                </div>
+            </div>
+            <div class="rounded-[2rem] overflow-hidden shadow-xl group">
+                <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+                    alt="Modular construction"
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="bg-white p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Modular Construction</h3>
+                    <p class="text-gray-600 leading-relaxed">Fast, flexible build solutions for healthcare facilities.
+                    </p>
+                </div>
+            </div>
+            <div class="rounded-[2rem] overflow-hidden shadow-xl group">
+                <img src="https://www.hospitalmanagementasia.com/wp-content/uploads/2023/02/3658058-scaled.jpg"
+                    alt="Infection control"
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="bg-white p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Infection Control</h3>
+                    <p class="text-gray-600 leading-relaxed">Advanced systems to keep healthcare areas hygienic and
+                        compliant.</p>
+                </div>
+            </div>
+            <div class="rounded-[2rem] overflow-hidden shadow-xl group">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80"
+                    alt="Medical gas systems"
+                    class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="bg-white p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Medical Gas Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">Reliable gas delivery infrastructure for safe clinical
+                        operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="py-24 bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div class="space-y-6">
+                <span class="text-secondary uppercase text-sm tracking-[0.4em] font-semibold">Why Choose
+                    Centerline</span>
+                <h2 class="text-4xl font-bold">Built for healthcare safety, reliability and speed.</h2>
+                <p class="text-gray-200 leading-relaxed text-sm text-justify">
+                    Centerline combines deep domain expertise, regulated delivery and modern engineering
+                    to create healthcare infrastructure systems that work from day one.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex gap-4 text-sm">
+                        <div class="mt-1 text-secondary"><i class="fas fa-check-circle"></i></div>
+                        <p>Trusted turnkey delivery for hospitals, labs and clinics.</p>
+                    </div>
+                    <div class="flex gap-4 text-sm">
+                        <div class="mt-1 text-secondary"><i class="fas fa-check-circle"></i></div>
+                        <p>Compliance-ready engineering for medical environments.</p>
+                    </div>
+                    <div class="flex gap-4 text-sm">
+                        <div class="mt-1 text-secondary"><i class="fas fa-check-circle"></i></div>
+                        <p>Single-source project management from design through handover.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-[2rem] overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+                    alt="Healthcare team" class="h-full w-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <h2 class="text-center text-4xl font-bold text-primary mb-14">
+            Trusted By Leading Healthcare Institutions
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+            <div
+                class="h-20 rounded-3xl bg-slate-100 flex items-center justify-center text-sm font-semibold text-slate-500">
+                Logo</div>
+        </div>
+
+    </div>
+ 
+</section>
+
+
+
+
+<section class="bg-slate-50 py-20 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-primary">
+                What Our Clients Say
+            </h2>
+        </div>
+
+    </div>
+
+    <div class="relative">
+
+        <div class="testimonial-track flex gap-8">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+          w-[320px]
+            lg:w-[20vw]">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        H
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Healthcare Facility Manager</p>
+                        <p class="text-sm text-gray-500">City Hospital</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    Centerline delivered exceptional HVAC solutions with excellent communication and professional
+                    delivery.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+         w-[320px]
+            lg:w-[20vw]">
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        A
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Hospital Administrator</p>
+                        <p class="text-sm text-gray-500">Regional Care Center</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    Their infection control expertise improved our facility safety and compliance standards.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+           w-[320px]
+            lg:w-[20vw]">
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        P
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Project Consultant</p>
+                        <p class="text-sm text-gray-500">Healthcare Projects Ltd.</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    The team provided great support and delivered a turnkey solution without compromise.
+                </p>
+            </div>
+
+            <!-- Duplicate Cards For Infinite Scroll -->
+
+
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+            
+            w-[320px]
+            lg:w-[20vw]">
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        H
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Healthcare Facility Manager</p>
+                        <p class="text-sm text-gray-500">City Hospital</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    Centerline delivered exceptional HVAC solutions with excellent communication and professional
+                    delivery.
+                </p>
+            </div>
+
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+            
+            w-[320px]
+            lg:w-[20vw]">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        A
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Hospital Administrator</p>
+                        <p class="text-sm text-gray-500">Regional Care Center</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    Their infection control expertise improved our facility safety and compliance standards.
+                </p>
+            </div>
+
+            <div class="testimonial-card bg-white rounded-[2rem] p-8 shadow-xl
+        
+            w-[320px]
+            lg:w-[20vw]">
+
+                <div class="flex items-center gap-4">
+                    <div
+                        class="h-14 w-14 rounded-full bg-slate-100 flex items-center justify-center text-2xl text-primary">
+                        P
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Project Consultant</p>
+                        <p class="text-sm text-gray-500">Healthcare Projects Ltd.</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 mt-6 leading-relaxed">
+                    The team provided great support and delivered a turnkey solution without compromise.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<style>
+    .testimonial-track {
+        width: max-content;
+        animation: scrollTestimonials 25s linear infinite;
+    }
+
+    .testimonial-track:hover {
+        animation-play-state: paused;
+    }
+
+    @keyframes scrollTestimonials {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .testimonial-card {
+        transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-10px);
+    }
+</style>
+{% endblock %}

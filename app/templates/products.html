@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block title %}Products | Centerline Technical Services{% endblock %}
+
+{% block content %}
+
+<section class="relative h-[30vh] flex items-center justify-center bg-fixed bg-center bg-cover"
+    style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80');">
+
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-white">Products</h1>
+        <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
+    </div>
+
+</section>
+
+<section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold text-primary">Featured Product Categories</h2>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                Our products are selected and engineered for healthcare projects that demand efficiency,
+                compliance and long-term support.
+            </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3">
+            <div class="bg-white rounded-[2rem] shadow-lg overflow-hidden hover:-translate-y-2 transition">
+                <img src="https://5.imimg.com/data5/ZS/UA/KY/SELLER-90300729/biomedical-gas-system-500x500.jpg"
+                    class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Medical Gas Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Complete modules for oxygen, vacuum, compressed air and specialty gas distribution in hospitals
+                        and clinical spaces.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2rem] shadow-lg overflow-hidden hover:-translate-y-2 transition">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1000&q=80"
+                    class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Infection Control Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        High-performance air filtration, pressure management and hygienic components for sensitive
+                        healthcare areas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2rem] shadow-lg overflow-hidden hover:-translate-y-2 transition">
+                <img src="https://cdn.media.amplience.net/i/epammarketplace/automation-in-healthcare-header?maxW=1200&qlt=80&fmt=jpg&bg=rgb%28255%2C255%2C255%29&v=195750753486"
+                    class="h-64 w-full object-cover">
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold text-primary mb-3">Healthcare Automation</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Smart monitoring and controls for HVAC, pressure, energy and facility performance across your
+                        healthcare campus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid gap-10 lg:grid-cols-3">
+            <div class="bg-primary text-white rounded-[2rem] p-10 shadow-xl">
+                <span
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/15 text-secondary text-2xl mb-6">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+                <h3 class="text-2xl font-bold mb-4">Reliable Performance</h3>
+                <p class="text-gray-100 leading-relaxed">
+                    Products designed for continuous service in demanding healthcare environments.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-[2rem] p-10 shadow-xl">
+                <span
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary text-2xl mb-6">
+                    <i class="fas fa-tools"></i>
+                </span>
+                <h3 class="text-2xl font-bold mb-4">Approved Standards</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Compliant solutions for medical gas, electrical safety, infection control and healthcare
+                    construction.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-[2rem] p-10 shadow-xl">
+                <span
+                    class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary text-2xl mb-6">
+                    <i class="fas fa-headset"></i>
+                </span>
+                <h3 class="text-2xl font-bold mb-4">Dedicated Support</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Expert product guidance, installation support and long-term maintenance assistance.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-slate-50 py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-primary">Ready to specify the right healthcare product?</h2>
+        <p class="mt-5 text-gray-600 leading-relaxed">
+            Contact Centerline and let our experts help you choose the best products for your facility, with full
+            compliance and delivery support.
+        </p>
+        <a href="{% url 'contact' %}"
+            class="inline-block mt-10 bg-primary text-white px-10 py-4 rounded-full hover:bg-secondary transition">
+            Request a Quote
+        </a>
+    </div>
+</section>
+
+{% endblock %}
