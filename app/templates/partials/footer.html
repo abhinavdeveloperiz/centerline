@@ -1,3 +1,4 @@
+{% load static %}
 <footer class="bg-[#00337a] text-white">
 
     <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
@@ -10,10 +11,14 @@
                     Centerline Technical Services
                 </h3>
 
-                <p class="text-gray-300 leading-relaxed">
-                    Delivering quality products and services with innovation,
-                    reliability and customer satisfaction.
+                <p class="text-gray-300 leading-relaxed text-sm mb-6">
+                    Delivering quality products and healthcare engineering services with innovation, reliability, and customer satisfaction.
                 </p>
+
+                <!-- Certification Badge Box -->
+                <div class="bg-white p-3 rounded-2xl inline-block shadow-xl">
+                    <img src="{% static 'images/licence.jpeg' %}" alt="ISO 45001:2018 & USCB Accreditation" class="h-16 sm:h-20 w-auto object-contain">
+                </div>
             </div>
 
             <!-- Quick Links -->
@@ -95,13 +100,13 @@
                 </div>
             </div>
 
-            <!-- Social -->
+            <!-- Social & Accreditations -->
             <div>
                 <h4 class="text-xl font-semibold mb-5">
                     Follow Us
                 </h4>
 
-                <div class="flex gap-4">
+                <div class="flex gap-4 mb-8">
 
                     <a href="#"
                         class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#39c0ba] transition duration-300">
@@ -124,6 +129,13 @@
                     </a>
 
                 </div>
+
+                <h4 class="text-sm font-semibold uppercase tracking-wider text-[#39c0ba] mb-3">
+                    Accreditation & Standards
+                </h4>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                    Certified ISO 45001:2018 Safety Management System & USCB Accredited (5169).
+                </p>
             </div>
 
         </div>
